@@ -1,2 +1,1 @@
-# JHUWebDev
-Web Dev Course Assignment 2
+This is the readme file for course assignment
