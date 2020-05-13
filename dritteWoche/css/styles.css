@@ -40,7 +40,7 @@ h3 {
 .c{
   width: 90%;
   overflow: auto;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 100px 10px 10px 10px;
   position: relative;
   background-color: grey;
