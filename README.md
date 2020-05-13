@@ -1,1 +1,1 @@
-This is the readme file for course assignment
+This is the readme file for courses assignment by Johns Hopkins University
