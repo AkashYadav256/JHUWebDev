@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>Welcome to the signup page for the restaurant newsletter</h1>
+
+  <form name="regform" novalidate>
+
+    <input class="myDiv" type="text" name="firstname" placeholder="First name here:"
+    ng-model="reg.user.firstname"
+    required>
+    <span
+      ng-if="regform.firstname.$error.required && regform.firstname.$touched">
+      First name is a required field, sorry
+    </span>
+    <br><br>
+
+    <input class="myDiv" type="text" name="lastname" placeholder="Last name here:"
+    ng-model="reg.user.lastname"
+    required>
+    <span
+      ng-if="regform.lastname.$error.required && regform.lastname.$touched">
+      Last name is a required field, sorry
+    </span>
+    <br><br>
+
+    <input class="myDiv" type="email" name="email" placeholder="Email"
+    ng-model="reg.user.email"
+    required>
+    <span
+      ng-if="regform.email.$invalid && regform.email.$touched">
+      Email (in proper format) is a required field
+    </span>
+    <br><br>
+
+    <input class="myDiv" type="text" name="phone" placeholder="Phone ###-###-####"
+    ng-model="reg.user.phone"
+    pattern="(\d{3})-(\d{3})-(\d{4})">
+    <span
+      ng-if="regform.phone.$invalid && regform.phone.$touched">
+      Phone number must be in the format: ###-###-####
+    </span>
+    <br><br>
+
+    <input class="myDiv" type="text" name="favitem" placeholder="Favorite item"
+    ng-model="reg.user.favitem"
+    required>
+    <span
+      ng-if="regform.favitem.$error.required && regform.favitem.$touched">
+
+    </span>
+    <br><br>
+
+    <button class="myDiv"
+    ng-disabled="regform.$invalid"
+    ng-click="reg.submit(reg.user.favitem);">Submit</button>
+
+    <br><div>{{ reg.login }}</div>
+
+  </form>
+</div>

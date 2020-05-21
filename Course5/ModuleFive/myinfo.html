@@ -1,0 +1,29 @@
+<div class="container">
+
+<h1 ng-if="!inf.user">Not signed up yet! <a ui-sref="public.signup">Sign Up Now!!</a></h1>
+
+<div ng-if="inf.user">
+<div>Firstname: {{inf.user.firstname}}</div>
+<br>
+<div>Lastname: {{inf.user.lastname}}</div>
+<br>
+<div>Phone: {{inf.user.phone}}</div>
+<br>
+<div>Email: {{inf.user.email}}</div>
+<br>
+<div>Favorite Item: {{inf.user.favitem}}</div>
+<br>
+<div>
+<img class="img-responsive" width="250" height="150" ng-src="{{inf.path}}/images/{{inf.short_name}}.jpg">
+</div>
+<br>
+<div>
+Name of your favorite dish: {{inf.name}}
+</div><br>
+<div>
+  Description of your favorite dish: {{inf.des}}
+</div>
+
+</div>
+
+</div>
